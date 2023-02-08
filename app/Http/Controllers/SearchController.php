@@ -16,7 +16,7 @@ class SearchController extends Controller
         if($search == "UIN"){
             $universities = CerejurUniversities::where('name', 'like', '%'.'Universitas Islam Negeri'.'%')->paginate(5);
         }elseif($search=="UIN BANDUNG" && $search=="uin bandung"){
-            $universities = CerejurUniversities::where('name', 'like', '%'.'Universitas Islam Negeri Bandung'.'%')->paginate(5);
+            $universities = CerejurUniversities::where('name', 'like', '%'.'Universitas Islam Negeri Sunan Gunung jati'.'%')->paginate(5);
         }elseif($search=="IT"){
             $universities = CerejurUniversities::where('name', 'like', '%'.'Institut Teknologi'.'%')->paginate(5);
         }elseif($search=="ITB"){
